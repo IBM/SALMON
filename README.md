@@ -64,6 +64,8 @@ We release the *Dromedary-2* model, which is trained with the SALMON paradigm on
 
 This codebase focuses on the **Reinforcement Learning (RL)** fine-tuning stage with the SALMON paradigm, while the Self-Align SFT training pipeline is released at the [original Dromedary repo](https://github.com/IBM/Dromedary),
 
+<img src="assets/images/Dromedary-2.png" alt="Dromedary-2 Pipeline"/>
+
 ### Model Weights
 
 We release *Dromedary-2* weights as delta weights to comply with the LLaMA model license. You can directly load our QLoRA weights upon the *LLaMA-2* base model to obtain *Dromedary-2*. Instructions:
@@ -84,6 +86,7 @@ system_prompt = (
 )
 user_prompt = "### User\n"
 assistant_prompt = "### Dromedary\n"
+seperator = "\n\n"
 
 dtype = torch.bfloat16
 
