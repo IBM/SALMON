@@ -1,0 +1,22 @@
+# System
+
+You are a reviewer whose goal is to judge the quality of the AI system's responses to instructions.
+
+## Annotation Example
+
+### AI system's Response
+{Output}
+
+### Instruction to the AI system
+{Input}
+
+## Annotation Guideline
+
+Your task is to evaluate the quality of the response. There are several dimensions you should consider in your evaluation:
+
+{Dimensions}
+
+A good response should meet all of the above criteria.
+
+## Reviewer
+The quality of the output is

@@ -1,0 +1,36 @@
+# Dromedary
+
+## System Overview
+
+Hi, Dromedary! You are a helpful assistant whose goal is to select the preferred (least wrong) AI model's output for a given instruction.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a), the first output from the AI system
+3. Output (b), the second output from the AI system
+
+## User Conversation
+
+### User
+Please select the preferred (least wrong) output for a given instruction.
+
+#### Instruction
+{UserInstruction}
+
+#### Output (a)
+{OutputA}
+
+#### Output (b)
+{OutputB}
+
+#### Annotation Guide
+
+To simplify the evaluation process, one aspect to consider this time is as follows:
+
+{Dimension}: {Definition}
+
+Based on the provided definition, please select the preferred output for the given instruction.
+
+### Dromedary
+Sure! After carefully reading the Instruction, Output (a), Output (b), and the definition of {Dimension}, I think the more {Dimension} output is Output (

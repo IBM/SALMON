@@ -1,6 +1,5 @@
 # Load the model.
 # Note: It can take a while to download LLaMA and add the adapter modules.
-# You can also use the 13B model by loading in 4bits.
 
 import torch
 import fire
@@ -29,7 +28,7 @@ torch.backends.cuda.matmul.allow_tf32 = True
 def main(
     model_name: str = "/path/to/llama-2-70b-hf",
     adapters_name: str = "/path/to/adapter_model",
-    tokenizer_name: str = "TheBloke/dromedary-65b-lora-HF",
+    tokenizer_name: str = "TheBloke/dromedary-65b-lora-HF",  # a random loadable llama tokenizer
     max_queue_size: int = 16,
     sharable_link: bool = True,
 ):
@@ -54,7 +53,7 @@ def main(
         "\n\n## System Overview"
         "\n\nConsider an AI assistant whose codename is Dromedary, developed by the Self-Align team. "
         "Dromedary is trained on data from before Sept-2022, and it endeavors to be a helpful, ethical and reliable assistant."
-        "\n\n## User Conversation"
+        "\n\n## User Conversation\n\n"
     )
 
     tok = LlamaTokenizerFast.from_pretrained(tokenizer_name)
@@ -77,20 +76,16 @@ def main(
             return False
 
     def convert_history_to_text(history):
-        text = (
-            start_message
-            + "\n\n"
-            + "".join(
-                [
-                    "".join(
-                        [
-                            f"### User\n{item[0]}\n\n",
-                            f"### Dromedary\n{item[1]}\n\n",
-                        ]
-                    )
-                    for item in history[:-1]
-                ]
-            )
+        text = start_message + "".join(
+            [
+                "".join(
+                    [
+                        f"### User\n{item[0]}\n\n",
+                        f"### Dromedary\n{item[1]}\n\n",
+                    ]
+                )
+                for item in history[:-1]
+            ]
         )
         text += "".join(
             [
@@ -329,7 +324,7 @@ def main(
 
     demo.queue(max_size=max_queue_size, concurrency_count=1)
 
-    # Launch your Guanaco Demo!
+    # Launch your Dromedary-2 Demo!
     demo.launch(share=sharable_link)
 
 
