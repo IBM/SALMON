@@ -40,7 +40,7 @@ torchrun --nproc_per_node $GPUS_PER_NODE \
     --group_size $GROUP_SIZE \
     --input_file "$DATA_DIR/oasst1_prompts.json" \
     --output_file "$DATA_DIR/oasst1_dromedary2_sft_response1.json" \
-    --meta_prompt_file "../prompts/synthetic_inference_prompts/dromedary_inference_prompt.txt" \
+    --meta_prompt_file "../../prompts/synthetic_inference_prompts/dromedary_inference_prompt.txt" \
     --temperature 0.7 \
     --top_p 1.0 \
     --seed 43

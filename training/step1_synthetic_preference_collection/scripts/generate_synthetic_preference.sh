@@ -18,7 +18,7 @@ torchrun \
     synthetic_preference.py \
     --model_name "$MODEL_DIR/llama-2-70b-hf" \
     --adapters_name "$MODEL_DIR/dromedary-2-70b-sft-qlora/adapter_model" \
-    --preferece_prompt "../prompts/synthetic_preference_prompt.txt" \
-    --rm_principles "../prompts/principles/principle_collection_rm.json" \
+    --preferece_prompt "../../prompts/synthetic_preference_prompt.txt" \
+    --rm_principles "../../prompts/principles/principle_collection_rm.json" \
     --response_pattern "$DATA_DIR/oasst1_dromedary2_sft_response*.json" \
     --output_file "$DATA_DIR/oasst1_dromedary2_sft_preference.json"
