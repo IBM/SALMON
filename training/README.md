@@ -96,9 +96,9 @@ salloc --nodes 1 --time 24:00:00 --gres=gpu:80g:8 srun bash scripts/train_reward
 
 ## Step 3: RL Training with the Principle-following Reward Model
 
-Finally, we train the policy model with the principle-following reward model. We use the diverse user prompts from [ShareGPT](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered), [Dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k), [OpenAssistant](https://huggingface.co/datasets/OpenAssistant/oasst1), [OpenOrca](https://huggingface.co/datasets/Open-Orca/OpenOrca), [MATH](https://huggingface.co/datasets/competition_math).
+Finally, we train the policy model with the principle-following reward model. We use the diverse user prompts from [ShareGPT](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered), [Dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k), [OpenAssistant](https://huggingface.co/datasets/OpenAssistant/oasst1), [OpenOrca](https://huggingface.co/datasets/Open-Orca/OpenOrca), and [MATH](https://huggingface.co/datasets/competition_math).
 
-### Step 3.1: Preparing the RL Training Data
+### Step 3.1: Preparing the Prompt Dataset for RL Training
 
 <details>
 <summary> <strong> Running the code </strong> </summary>

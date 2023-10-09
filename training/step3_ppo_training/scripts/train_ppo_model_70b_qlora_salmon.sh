@@ -95,5 +95,7 @@ torchrun \
     --query_len 256 \
     --response_len 1024 \
     --model_max_length 1664 \
+    --enable_reasoning_principles True \
+    --enable_redteaming_principles True \
     --temperature $SAMPLING_TEMPARATURE \
     --noptepochs 2
