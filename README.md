@@ -142,7 +142,7 @@ We provide the full [training pipeline](training) of *Dromedary-2* for reproduct
 
 ## Prompts
 
-All the human annotations used in this project can be found [here](prompts).
+All the human supervision used in this project can be found [here](prompts).
 
 ### Citation
 
