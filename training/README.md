@@ -1,6 +1,6 @@
 # Training Experiences
 
-The whole **SALMON** process involves three stages: Synthetic Preference Collection, Training the Principle-following Reward Model, and RL Training with the Principle-following Reward Model. In our [paper](https://arxiv.org/abs/placeholder), we provide a detailed description of each of these stages.
+The whole **SALMON** process involves three stages: Synthetic Preference Collection, Training the Principle-following Reward Model, and RL Training with the Principle-following Reward Model. In our [paper](https://arxiv.org/abs/2310.05910), we provide a detailed description of each of these stages.
 
 ## Prerequisites
 
