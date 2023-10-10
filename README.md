@@ -44,7 +44,7 @@ controllability, and scalable oversight. -->
 
 SALMON is a new RLAIF paradigm for self-aligning langauge models from scratch, using only a small set of human-defined principles as guidance.
 Central to our approach is a principle-following reward model. Trained on synthetic preference data, this model can generate reward scores based on arbitrary human-defined principles.
-For comprehensive details and insights, we kindly direct you to our [paper](https://arxiv.org/abs/placeholder).
+For comprehensive details and insights, we kindly direct you to our [paper](https://arxiv.org/abs/2310.05910).
 
 <p align="center">
 
@@ -164,7 +164,7 @@ Please consider citing the following papers if you use the data or code in this 
       title={SALMON: Self-Alignment with Principle-Following Reward Models},
       author={Zhiqing Sun and Yikang Shen and Hongxin Zhang and Qinhong Zhou and Zhenfang Chen and David Cox and Yiming Yang and Chuang Gan},
       year={2023},
-      eprint={placeholder},
+      eprint={2310.05910},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
