@@ -42,7 +42,7 @@ open-sourced the code and model weights to encourage further research into
 aligning LLM-based AI agents with enhanced supervision efficiency, improved
 controllability, and scalable oversight. -->
 
-SALMON is a new RLAIF paradigm for self-aligning langauge models from scratch, using only a small set of human-defined principles as guidance.
+SALMON is a new RLAIF paradigm for self-aligning language models from scratch, using only a small set of human-defined principles as guidance.
 Central to our approach is a principle-following reward model. Trained on synthetic preference data, this model can generate reward scores based on arbitrary human-defined principles.
 For comprehensive details and insights, we kindly direct you to our [paper](https://arxiv.org/abs/2310.05910).
 
