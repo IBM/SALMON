@@ -88,6 +88,8 @@ user_prompt = "### User\n"
 assistant_prompt = "### Dromedary\n"
 seperator = "\n\n"
 
+# USAGE: system_prompt + user_prompt + `user_message` + seperator + assistant_prompt + `assistant_message` + seperator + user_prompt ...
+
 dtype = torch.bfloat16
 
 model_path = "path/to/llama-2-70b-hf"
