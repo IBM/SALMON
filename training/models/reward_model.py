@@ -192,7 +192,7 @@ class RewardModel(transformers.PreTrainedModel):
             output_hidden_states=True,
             **kwargs,
         )
-        last_hidden_state = outputs.hidden_states[-1]
+        last_hidden_state = outputs.hidden_states[-1].permute(1, 0, 2)
         assert isinstance(last_hidden_state, torch.Tensor), f"{outputs}"
         # last_hidden_state = outputs.last_hidden_state
         # TODO(zhiqings): Hacking to make sure every parameter is used in the backward pass.
