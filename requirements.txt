@@ -7,7 +7,7 @@ wandb==0.15.3
 tiktoken==0.4.0
 tokenizers>=0.12.1
 peft==0.4.0
-gradio==3.35.2
+gradio==6.16.0
 gradio_client==0.2.9
 sentencepiece==0.1.99
 tensorboard >= 2.12.0
